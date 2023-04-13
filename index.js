@@ -1,9 +1,15 @@
 let input = document.getElementById("inp3");
 let output = getElementById("inp4")
-input = Number(input.value);
+input = (input.value);
+
+var sum = 0;
+
+for(let i=0; i<10; i++){
+    sum = sum + Number(input.charAt(i));
+}
 
 var ans = ""
-for(let i=1; i<=input; i++)
+for(let i=1; i<=sum; i++)
 {
     if(i%20 == 0){
         ans += "FizzBuzz ";
